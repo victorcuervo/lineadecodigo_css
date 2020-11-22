@@ -6,4 +6,9 @@
     líneas
 */
 
-h1 { color: red} /* Comentario tras propiedad */
+h1 { 
+    color: red; /* Comentario tras propiedad */
+    /* font-size: large; */ 
+} 
+
+/* Ejemplo explicado en http://lineadecodigo.com/css/comentarios-en-css/ */
