@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspect-Ratio en Imágenes</title>
+    <style>
+
+        .contenedor {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .item {
+            width: 300px;            
+        }
+
+
+        .cuadrado {
+            aspect-ratio: 1/1;
+            width: 100%;
+            object-fit: cover;
+        }
+        .television {
+            aspect-ratio: 4/3;
+            width: 100%;
+            object-fit: cover;
+        }
+        .apaisado {
+            aspect-ratio: 16/9;
+            width: 100%;
+            object-fit: cover;
+        }
+        .widescreen {
+            aspect-ratio: 21/9;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .contenido {
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Aspect-Ratio en Imágenes</h1>
+
+    <div class="contenedor">
+        <div class="item">
+            <img src="../resources/images/paisaje.jpg" alt="paisaje" class="cuadrado"/>
+            <div class="contenido">Esto es una imagen en cuadrado</div>
+        </div>
+
+        <div class="item">
+            <img src="../resources/images/paisaje.jpg" alt="paisaje" class="television"/>
+            <div class="contenido">Esto es una imagen en televisión</div>
+        </div>
+
+        <div class="item">
+            <img src="../resources/images/paisaje.jpg" alt="paisaje" class="apaisado"/>
+            <div class="contenido">Esto es una imagen en apaisado</div>
+        </div>
+
+        <div class="item">
+            <img src="../resources/images/paisaje.jpg" alt="paisaje" class="widescreen"/>
+            <div class="contenido">Esto es una imagen en widescreen</div>
+        </div>
+    </div>
+
+    <br><br>
+    <hr>
+    Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/css/xxx/">http://lineadecodigo.com/css/xxx/</a><br/>
+    <a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a><br>
+    Imagen de <a href="https://www.freepik.es/autor/tawatchai07">Tawatchai07</a>
+
+</body>
+</html>
