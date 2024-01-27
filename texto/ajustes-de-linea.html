@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajustes de Línea</title>
+    <style>
+        .contenedor {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .columna {
+            width: 50px;
+            background-color: lightcoral;            
+            margin: auto;
+        }
+        .texto-sinajustar {
+            overflow-wrap: normal;
+        }
+        .texto-ajustado {
+            overflow-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ajuste de Línea</h1>
+
+    <div class="contenedor">
+        <div class="columna texto-sinajustar">
+            Puede que la tarea que me he impuesto de escribir una historia completa del pueblo romano desde el comienzo mismo de su existencia me recompense por el trabajo invertido en ella, no lo sé con certeza, ni creo que pueda aventurarlo.
+        </div>
+    
+        <div class="columna texto-ajustado">
+            Puede que la tarea que me he impuesto de escribir una historia completa del pueblo romano desde el comienzo mismo de su existencia me recompense por el trabajo invertido en ella, no lo sé con certeza, ni creo que pueda aventurarlo.
+        </div>
+    </div>
+
+    <hr>
+    Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/css/xxx/">http://lineadecodigo.com/css/xxx/</a><br/>
+    <a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+    
+</body>
+</html>
