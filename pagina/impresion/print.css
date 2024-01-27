@@ -1,0 +1,37 @@
+
+
+/*1 Eliminar elementos no informativos */
+
+header, footer, aside, nav, form, iframe, .menu, .hero, .adslot {
+    display: none;
+}
+
+/* 2
+ Textos en fondo blanco
+ Texto a 12pt y Serif
+ Ajustar Margenes
+ */
+
+ body {
+    font-size: 14pt;
+    margin: 20px;
+    color: #000;
+    background-color: #fff;
+ }
+
+ /* 3 Invertir color de imágenes */
+ img {
+    filter: invert(100%) ;
+  }
+
+ /* Meter contenido antes y despúes -> Creo que hay algo hecho así en algún artículo */
+ article::after {
+    content: "Página disponible online en https://lineadecodigo.com";
+    display: block;
+    text-align: center;
+  }
+
+/* Controlar los cambios de páginas */
+section {
+    page-break-after: always;
+}
